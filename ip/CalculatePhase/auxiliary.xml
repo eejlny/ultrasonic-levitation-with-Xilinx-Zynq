@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="CalculatePhase" xd:componentRef="CalculatePhase" xd:initiationInterval="414" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:returnValue xd:interfaceRef="s_axi_crtls" xd:busTypeRef="axilite" xd:offset="0x10" xd:statusOffset="0x14" xd:dataWidth="32"/>
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_crtls" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="T_X" xd:originalName="T_X" xd:direction="in" xd:interfaceRef="s_axi_crtls" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="T_Y" xd:originalName="T_Y" xd:direction="in" xd:interfaceRef="s_axi_crtls" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="T_Z" xd:originalName="T_Z" xd:direction="in" xd:interfaceRef="s_axi_crtls" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="Offset" xd:originalName="Offset" xd:direction="in" xd:interfaceRef="s_axi_crtls" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:latencyEstimates xd:best-case="325" xd:worst-case="413" xd:average-case="357"/>
+  <xd:resourceEstimates xd:LUT="5102" xd:FF="2955" xd:BRAM="2" xd:DSP="10"/>
+</xd:acceleratorMap>
